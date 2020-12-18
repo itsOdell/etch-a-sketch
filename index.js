@@ -1,5 +1,6 @@
 let table = document.querySelector(".grid");
 let btn = document.querySelector(".submit");
+let color = document.querySelector("#color");
 function clear() {
     table.innerHTML = "";
 }
@@ -25,7 +26,7 @@ function makeGrid() {
 function styleColor() {
     for (var i = 0; i < (document.querySelector("#width").value) * (document.querySelector("#width").value); i++) {
         document.querySelectorAll("#cell")[i].addEventListener("mouseover", function() {
-            this.style.backgroundColor = "black";
+            this.style.backgroundColor = color.value;
         });
     }
 }
