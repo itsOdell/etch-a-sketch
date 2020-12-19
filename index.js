@@ -24,7 +24,7 @@ function makeGrid() {
     }
 }
 function styleColor() {
-    for (var i = 0; i < (document.querySelector("#width").value) * (document.querySelector("#width").value); i++) {
+    for (var i = 0; i < document.querySelectorAll("#cell").length; i++) {
         document.querySelectorAll("#cell")[i].addEventListener("mouseover", function() {
             this.style.backgroundColor = color.value;
         });
